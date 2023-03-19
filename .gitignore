@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# User Defined
+temp
+.vs
+*.pdb
+*.user
