@@ -1,55 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="소스 파일">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="__property__">
+      <UniqueIdentifier>{98e6f69e-ec9d-46c2-88bd-3b8906e8b07f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="__resource__">
+      <UniqueIdentifier>{66ea6a07-dac5-4b68-8977-f08ab7009f5c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="리소스 파일">
+    <Filter Include="__resource_file__">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="INTERFACE">
+      <UniqueIdentifier>{853f2cae-ad1d-49cc-9d75-1cdb69063a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="COMMON">
+      <UniqueIdentifier>{872f7165-06ce-4312-a67f-bac2f588ab01}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="APP_UTIL.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="pch.cpp">
+      <Filter>__property__</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>__property__</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="APP_UTIL.cpp">
+      <Filter>__property__</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="APP_UTIL.def">
-      <Filter>소스 파일</Filter>
+      <Filter>__property__</Filter>
     </None>
     <None Include="res\APP_UTIL.rc2">
-      <Filter>리소스 파일</Filter>
+      <Filter>__resource__</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>__property__</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>__property__</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>__property__</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>__resource__</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="APP_UTIL.rc">
-      <Filter>리소스 파일</Filter>
+      <Filter>__resource__</Filter>
     </ResourceCompile>
   </ItemGroup>
 </Project>
