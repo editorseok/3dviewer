@@ -52,6 +52,9 @@
     <ClInclude Include="targetver.h">
       <Filter>__property__</Filter>
     </ClInclude>
+    <ClInclude Include="Version.h">
+      <Filter>PRODUCTION</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ChildFrm.cpp">

@@ -33,6 +33,8 @@
 
 # User Defined
 temp
+bin
+lib
 .vs
 *.pdb
 *.user
