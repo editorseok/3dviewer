@@ -18,5 +18,6 @@ public:
 public:
 	virtual CString GetCompanyName() = 0;
 	virtual CString GetProductName() = 0;
+	virtual CString GetVersionName() = 0;
 
 };

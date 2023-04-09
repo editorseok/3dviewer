@@ -20,3 +20,8 @@ CString CProductInfoImpl::GetProductName()
 {
 	return _T(PRODUCT);
 }
+
+CString CProductInfoImpl::GetVersionName()
+{
+	return _T(FILE_VER);
+}

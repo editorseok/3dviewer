@@ -11,5 +11,5 @@ public:
 public:
 	virtual CString GetCompanyName() override;
 	virtual CString GetProductName() override;
-
+	virtual CString GetVersionName() override;
 };
