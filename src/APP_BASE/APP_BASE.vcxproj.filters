@@ -11,6 +11,9 @@
     <Filter Include="__resource__">
       <UniqueIdentifier>{97d8d1ef-4b54-4408-91b6-71cbdc42d469}</UniqueIdentifier>
     </Filter>
+    <Filter Include="INTERFACE">
+      <UniqueIdentifier>{5ab13ec6-e84e-44ec-9983-b63a1121bcea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -22,6 +25,7 @@
     <ClCompile Include="APP_BASE.cpp">
       <Filter>__property__</Filter>
     </ClCompile>
+    <ClCompile Include="ProductInfo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="res\APP_BASE.rc2">
@@ -44,6 +48,7 @@
     <ClInclude Include="framework.h">
       <Filter>__property__</Filter>
     </ClInclude>
+    <ClInclude Include="ProductInfo.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="APP_BASE.rc">

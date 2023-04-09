@@ -23,6 +23,8 @@
 #include "EditorDoc.h"
 #include "EditorView.h"
 
+#include "../APP_BASE/ProductInfo.h"
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -74,6 +76,9 @@ CEditorApp theApp;
 
 BOOL CEditorApp::InitInstance()
 {
+	// It's must be called first.
+	InitProdInfo();
+
 	// 애플리케이션 매니페스트가 ComCtl32.dll 버전 6 이상을 사용하여 비주얼 스타일을
 	// 사용하도록 지정하는 경우, Windows XP 상에서 반드시 InitCommonControlsEx()가 필요합니다. 
 	// InitCommonControlsEx()를 사용하지 않으면 창을 만들 수 없습니다.
@@ -101,14 +106,6 @@ BOOL CEditorApp::InitInstance()
 	// RichEdit 컨트롤을 사용하려면 AfxInitRichEdit2()가 있어야 합니다.
 	// AfxInitRichEdit2();
 
-	// 표준 초기화
-	// 이들 기능을 사용하지 않고 최종 실행 파일의 크기를 줄이려면
-	// 아래에서 필요 없는 특정 초기화
-	// 루틴을 제거해야 합니다.
-	// 해당 설정이 저장된 레지스트리 키를 변경하십시오.
-	// TODO: 이 문자열을 회사 또는 조직의 이름과 같은
-	// 적절한 내용으로 수정해야 합니다.
-	SetRegistryKey(_T("로컬 애플리케이션 마법사에서 생성된 애플리케이션"));
 	LoadStdProfileSettings(4);  // MRU를 포함하여 표준 INI 파일 옵션을 로드합니다.
 
 
@@ -235,6 +232,17 @@ void CEditorApp::LoadCustomState()
 
 void CEditorApp::SaveCustomState()
 {
+}
+
+void CEditorApp::InitProdInfo()
+{
+	CString csCompany = CProductInfo::Instance().GetCompanyName();
+	CString csProduct = CProductInfo::Instance().GetProductName();
+
+	free((void*)m_pszAppName);
+	m_pszAppName = _tcsdup(csProduct);
+	
+	SetRegistryKey(csCompany);
 }
 
 // CEditorApp 메시지 처리기

@@ -14,11 +14,14 @@
     <Filter Include="MAIN">
       <UniqueIdentifier>{c5a1ee1d-0f73-444b-b554-9620749edd5c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="PRODUCTION">
-      <UniqueIdentifier>{a6d04114-6894-4e0d-b210-3ecc63660a8c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="FRAME">
       <UniqueIdentifier>{2893a701-f775-4067-80d4-dff7ead1a0be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PRODUCT">
+      <UniqueIdentifier>{a6d04114-6894-4e0d-b210-3ecc63660a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PRODUCT\Define">
+      <UniqueIdentifier>{8215e333-da2e-4538-b8cf-62e089b75ae9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -52,8 +55,11 @@
     <ClInclude Include="targetver.h">
       <Filter>__property__</Filter>
     </ClInclude>
-    <ClInclude Include="Version.h">
-      <Filter>PRODUCTION</Filter>
+    <ClInclude Include="ProductInfoImpl.h">
+      <Filter>PRODUCT</Filter>
+    </ClInclude>
+    <ClInclude Include="Product.h">
+      <Filter>PRODUCT\Define</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +83,9 @@
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>__property__</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductInfoImpl.cpp">
+      <Filter>PRODUCT</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
