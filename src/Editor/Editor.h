@@ -43,8 +43,14 @@ public:
 	virtual void LoadCustomState();
 	virtual void SaveCustomState();
 
+protected:
+	void InitProdInfo();
+
+protected:
 	afx_msg void OnAppAbout();
+
 	DECLARE_MESSAGE_MAP()
+
 };
 
 extern CEditorApp theApp;
